@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 
 # Visualisation de données avec ggplot2
 
@@ -602,6 +602,6 @@ pour faire des graphiques "ridge"
 
 -------
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 
 
