@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 
 ******
 
@@ -39,13 +39,12 @@ expt1 <- read_tsv("../data/burghardt_et_al_2015_expt1.txt")
 
 <br>
 
-**ChatGPT va toujours donner une réponse, même si elle est fausse.** Il est difficile de faire la différence entre une réponse juste ou fausse car ChatGPT va répondre dans les deux cas en ayant l'air sûr de lui. Il peut même donner de fausses réferences quand on lui demande.  
+**ChatGPT (et les autres outils d'IA) va toujours donner une réponse, même si elle est fausse.** Il est difficile de faire la différence entre une réponse juste ou fausse car ChatGPT va répondre dans les deux cas en ayant l'air sûr de lui. Il peut même donner de fausses réferences quand on lui demande.  
 
-Une étude a montré que ChatGPT donne [52% de mauvaises réponses](https://intelligence-artificielle.developpez.com/actu/347064/Une-etude-affirme-que-52-pourcent-des-reponses-de-ChatGPT-aux-questions-de-codage-informatique-sont-incorrectes-et-77-pourcent-sont-verbeuses-mais-les-reponses-du-chatbot-sont-convaincantes/) à des questions de codage. Il va généralement aller dans le sens de l'utilisateur, [quite à se contredire](https://oclock.io/pourquoi-on-deconseille-aux-jeunes-developpeurs-dutiliser-chatgpt) si l'on remet en cause sa réponse.
 
 **Il est donc important de vérifier les réponses de ChatGPT!**
 
-Ci-dessous nous allons voir quelques manières d'utiliser ChatGPT pour nous aider au codage.
+Ci-dessous nous allons voir quelques manières d'utiliser ChatGPT (ou d'autres outils d'IA) pour nous aider au codage.
 
 <br>
 
@@ -72,37 +71,7 @@ expt1_col_background <- filter(expt1, grepl("Col", background))
 
 <br>
 
-## Ajout de commentaire pour chaque ligne de code
 
-<br>
-
-Afin de pouvoir réutiliser nos codes (et les comprendre plusieurs mois plus tard), il est important de les commenter. ChatGPT peut nous aider à cette tache.
-
-Prenons comme exemple un code plus long venant d'un autre exercice de ce cours.
-
-La question de l'exercice était:  
-**Faites un voilin plot de `total.leaf.length.mm` pour chaque génotype et ajoutez la médiane pour chaque groupe (avec un point coloré) ainsi que le nombre d'observation de chaque groupe**
-
-Le code était:
-```{r,eval=FALSE}
-group_by(expt1, genotype) %>% 
-  summarise( mediane.total.leaf.length.mm=median(total.leaf.length.mm, na.rm = TRUE),
-            n.obs=n()) %>% 
-  mutate(n.obs=paste("n =",n.obs)) %>% 
-  full_join(expt1, by="genotype") %>%
-  ggplot(aes(x=genotype, y=total.leaf.length.mm)) +
-  geom_violin() +
-  geom_point(aes(x=genotype, y=mediane.total.leaf.length.mm), col="red") +
-  geom_text(aes(label=n.obs, x=genotype, y=0))
-```
-
-
-> Demandez à ChatGPT un commentaire de chaque ligne à intégrer à votre code.   
-
-> Comparez les résultats (et la demande faite à ChatGPT) avec vos camarades. Quel semble être un bon moyen de demander des commentaires du code?
-
-
-<br>
 
 # Obtention d'un code à partir d'une question
 
@@ -139,19 +108,24 @@ select(expt1, ends_with("bolt"))
 
 Voyons maintenant une demande plus complexe. Voici une des questions de l'exam de l'année dernière 
 
-**Faites une figure représentant la distribution de la teneur en azote et en fer en fonction des conditions dans lesquelles les plantes ont poussé. Ajoutez le résultat d’un test statistique comparant les moyennes des différents groupes.**
+**Faites une figure représentant la distribution de `blade.length.mm` divisé par `total.leaf.length.mm` en fonction des conditions dans lesquelles les plantes ont poussé avec un graphique par background.**
 
-**Aide : Pour cela, selectionnez les colonnes qui contiennent les informations sur les traitements effectués ainsi que celles avec la mesure de la teneur en azote (N) et en fer (Fe). Modifier le format du tableau pour passer au format long avec une colonne contenant le nom du minéral mesuré (N ou Fe) et une colonne contenant les teneurs dans les plantes pour ces minéraux. Puis, réalisez le graphique demandé de la teneur en azote et en fer en fonction du type de traitement en nitrate. Nous souhaitons une représentation en boxplots colorés suivant la concentration en CO2 atmosphérique, et avec le mineral mesuré (N ou Fe) ainsi que le type de traitement en fer en facet. Pour finir ajoutez au graphique un test de comparaison de moyennes.**
+**Aide: - Créez une nouvelle colonne (blade.ratio) avec le ratio de `blade.length.mm` et `total.leaf.length.mm`
+- Créez une nouvelle colonne (nommée par exemple `condition`) en concaténant `day.length`, `temperature` et `fluctuation`
+- Sélectionnez les background  `Col ` et `Ler`
+- Faites un boxplot du ratio de `blade.length.mm` et `total.leaf.length.mm` en fonction de la `condition`, en créant des facets en fonction du background**
 
 
 La solution est:
 ```{r,eval=FALSE}
-select(minerals, CO2_treatment, Nitrate_treatment, Iron_treatment, Fe, N) %>% 
-pivot_longer(cols=c("Fe","N"), names_to = "metal", values_to = "concentration") %>% 
-  ggplot(aes(x= Nitrate_treatment   , y=concentration, fill=CO2_treatment))+
+mutate(expt1, blade.ratio=blade.length.mm/total.leaf.length.mm) %>% 
+  unite("condition", day.length, temperature, fluctuation, sep=".") %>% 
+  filter(background%in%c("Col","Ler")) %>% 
+  ggplot(aes(x=condition, y=blade.ratio)) +
   geom_boxplot()+
-  stat_compare_means(label = "p.format", method="t.test", label.y.npc = "bottom") +
-  facet_wrap(metal~Iron_treatment, scale="free")
+  ylim(0,1) +
+  facet_grid(.~background) +
+  theme(axis.text.x=element_text(angle = 45))
 ```
 
 
@@ -224,60 +198,6 @@ mutate(expt1, ratio_leaves=rosette.leaf.num/cauline.leaf.num) %>%
 
 <br>
 
-### Troisième exemple
-
-<br>
-
-> Demandez à ChatGPT de générer un code afin de reproduire le graphique suivant. Pour cela essayez de comprendre à quelle question permet de répondre ce graphique. A partir de là listez les différentes étapes et mettez les dans votre demande. N'oubliez pas d'être précis en utilisant le nom des variables dans la demande.
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-filter(expt1, vernalization=="V", temperature==22, genotype!="vin3-4 FRI") %>% 
-  ggplot(aes(x=genotype, y=cauline.leaf.num, col=fluctuation)) +
-  geom_boxplot() +
-  facet_wrap(~day.length) +
-  stat_compare_means(label = "p.signif")
-  
-```
-
-<br>
-
-
-# Aide pour trouver une erreur dans un code
-
-<br>
-
-Vous pouvez aussi utiliser ChatGPT pour trouver une erreur dans un code.
-
-Demandez à ChatGPT de touver l'erreur dans le code suivant:
-```{r, eval=FALSE}
-mutate(expt1, ratio_leaves=rosette.leaf.num/cauline.leaf.num) %>% 
-  filter(vernalization=="V", genotype!="vin3-4 FRI") %>% 
-  ggplot(expt1,aes(x=genotype, y=ratio_leaves, col=fluctuation)) +
-  geom_boxplot() +
-  facet_grid(temperature~day.length) +
-  stat_compare_means(label = "p.signif")
-```
-
-> Que pensez vous de la réponse?
-
-
-Demandez à ChatGPT de touver l'erreur dans le code suivant:
-```{r, eval=FALSE}
-mutate(expt1, ratio_leaves=Rosette.leaf.num/cauline.leaf.num) %>% 
-  filter(vernalization=="V", genotype!="vin3-4 FRI") %>% 
-  ggplot(aes(x=genotype, y=ratio_leaves, col=fluctuation)) +
-  geom_boxplot() +
-  facet_grid(temperature~day.length) +
-  stat_compare_means(label = "p.signif")
-```
-
-> Que pensez vous de la réponse?
-
-
-**ChatGPT n'a pas accès à vos données, il ne peut donc pas vérifier que les variables sont bien ortographiées.**
-
-<br>
-
 
 # Un outil combinant ChatGPT à vos données
 
@@ -291,7 +211,7 @@ Afin de vous aider au codage avec un outil qui combine ChatGPT à vos données v
 ####  <span style="color: red;">Attention, tout tableau que vous mettez dans ce site n'est plus confidentiel. Ne l'utilisez pas pour des données sensibles ou non publiées! </span>
 
 
-> Utilisez Rtutor pour obtenir un code pour les trois exemples au dessous dans le cours.   
+> Utilisez Rtutor pour obtenir un code pour les exemples au dessous dans le cours.   
 > Qu'en pensez vous par rapport à CHatGPT?
 
 <br>
@@ -311,5 +231,5 @@ Afin de vous aider au codage avec un outil qui combine ChatGPT à vos données v
 
 ******
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 

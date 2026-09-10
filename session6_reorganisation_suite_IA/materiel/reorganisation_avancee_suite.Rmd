@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 
 <br>
 
@@ -314,7 +314,7 @@ Nous pouvons aussi ordonner les génotypes en fonction de `days.to.bolt`. Pour c
 
 #### - Finissez la deuxième moitié du contrôle continu dont les instructions sont [ici](Devoir_seance6.html)
 
-#### - Déposez avant le 05/12/2025 à minuit sur Moodle le script R de la deuxième moitié du contrôle continu résultant des instructions à la fin des séances 4 et 6.
+#### - Déposez avant le 05/12/2026 à minuit sur Moodle le script R de la deuxième moitié du contrôle continu résultant des instructions à la fin des séances 4 et 6.
 
 <br>
 
@@ -330,7 +330,7 @@ Lors de l'examen blanc (et de l'examen final) vous aurez accès au cours et à v
 
 
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 
 
 
