@@ -18,7 +18,7 @@ Afin de pouvoir faire ce cours sur votre ordinateur, téléchargez le matériel 
 Les différentes séances sont (avec accès au cours):
 
 
-### Séance 1 (Jeudi 09/10/2025 13h15-16h30, salle TD5.126): Organisation des données et Intro à **R** 
+### Séance 1 (Jeudi 08/10/2026 13h15-16h30, salle ?): Organisation des données et Intro à **R** 
 
 [Matériel organisation des données](session1_organisation_intro/materiel/organisation_session.html)  
 
@@ -33,7 +33,7 @@ Les différentes séances sont (avec accès au cours):
 <br>
 
 
-### Séance 2 (Vendredi 17/10/2025 13h15-16h30, salle TD5.127): Réaliser des graphiques
+### Séance 2 (Vendredi 16/10/2026 13h15-16h30, salle ?): Réaliser des graphiques
 
 
 [Matériel réaliser des graphiques](session2_ggplot/materiel/ggplot_session.html)  
@@ -43,7 +43,7 @@ Les différentes séances sont (avec accès au cours):
 <br>
 
 
-### Séance 3 (Lundi 20/10/2025 13h15-14h45, salle TD5.127): Ajout des résultats de tests statistiques
+### Séance 3 (Lundi 19/10/2026 13h15-14h45, salle ?): Ajout des résultats de tests statistiques
 
 
 [Matériel ajouter des résultats de tests statistiques à des graphiques](session3_stats/materiel/statistiques.html)  
@@ -54,7 +54,7 @@ Les différentes séances sont (avec accès au cours):
 
 <br>
 
-### Séance 4 (Jeudi 23/10/2025 13h15-16h30, salle TD5.127): Réorganisation de données 
+### Séance 4 (Jeudi 22/10/2026 13h15-16h30, salle ?): Réorganisation de données 
 
 [Partie 2 - Matériel réorganisation de données](session4_reorganisation/materiel/reorganisation_donnees.html)  
 
@@ -64,7 +64,7 @@ Les différentes séances sont (avec accès au cours):
 
 <br>
 
-### Séance 5 (Lundi 03/11/2025 13h15-16h30, salle TD5.125): Réorganisation de données avancées
+### Séance 5 (Lundi 02/11/2026 13h15-16h30, salle ?): Réorganisation de données avancées
 
 [Matériel réorganisation avancée de données ](session5_reorganisation_avancee/materiel/reorganisation_avancee.html)  
 
@@ -76,7 +76,7 @@ Les différentes séances sont (avec accès au cours):
 
 
 
-### Séance 6 (Vendredi 14/11/2025 13h15-16h30, salle TD5.130): Réorganisation avancée de données (suite)  ET utilisation d'outils d'IA pour l'aide au codage
+### Séance 6 (Vendredi 13/11/2026 13h15-16h30, salle ?): Réorganisation avancée de données (suite)  ET utilisation d'outils d'IA pour l'aide au codage
 
 
 
@@ -94,13 +94,13 @@ Les différentes séances sont (avec accès au cours):
 <br>
 
 
-### Séance 7 (Lundi 17/11/2025 13h15-16h30, session3_stats): Exam blanc, Correction de l'exam blanc et trucs et astuces
+### Séance 7 (Date? 13h15-16h30, salle ?): Exam blanc, Correction de l'exam blanc et trucs et astuces
 
 
 
 
 
-### Séance 8 (Jeudi 11/12/2025 9h45-11h15, salle TD5.129): Exam
+### Séance 8 (Jeudi 10/12/2026 9h45-11h15, salle ?): Exam
 
 
 
