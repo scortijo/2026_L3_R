@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 
 <br>
 
@@ -388,7 +388,7 @@ Ces fonctions peuvent être utiles pour comparer de gros jeux de données :
 
 
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 
 
 
