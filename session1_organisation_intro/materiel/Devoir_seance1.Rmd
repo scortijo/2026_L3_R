@@ -13,11 +13,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 
 Ceci est le début du contrôle continu qui combinera les exercices à faire entre les séances.
 
-**!Attention! Vous devez tout d'abord installer R et R studio en utilisant les instructions sur [la page d'accueil](https://scortijo.github.io/2025_L3_R/)**
+**!Attention! Vous devez tout d'abord installer R et R studio en utilisant les instructions sur [la page d'accueil](https://scortijo.github.io/2026_L3_R/)**
 
 <br>
 

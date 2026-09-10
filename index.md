@@ -130,11 +130,11 @@ Les différentes séances sont (avec accès au cours):
 
 **L'évaluation de cette matière va comporter:**
 
-**1. Un contrôle continu qui combine les exercices à faire entre les séances sur votre ordinateur personnel. Une première moitié du contrôle continu sera à déposer sur Moodle au plus tard le  31/10/2025 à minuit. La deuxième moitié sera à déposer sur Moodle au plus tard le 05/12/2025 à minuit.**
+**1. Un contrôle continu qui combine les exercices à faire entre les séances sur votre ordinateur personnel. Une première moitié du contrôle continu sera à déposer sur Moodle au plus tard le  31/10/2026 à minuit. La deuxième moitié sera à déposer sur Moodle au plus tard le 05/12/2026 à minuit.**
 
 
 
-**2. Un devoir en classe lors de la dernière séance le 11/12/2025**
+**2. Un devoir en classe lors de la dernière séance le 10/12/2026**
 
 <br>
 
