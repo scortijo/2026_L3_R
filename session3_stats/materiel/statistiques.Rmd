@@ -636,7 +636,7 @@ Vous pouvez trouver des exemples de chaque cas et quelques points supplémentair
 
 #### - Finissez la première moitié du contrôle continu dont les instructions sont [ici](Devoir_seance3.html)
 
-#### - Déposez avant le 31/10/2025 à minuit sur Moodle le script R de la première moitié du contrôle continu résultant des instructions à la fin des séances 2 et 3.
+#### - Déposez avant le 31/10/2026 à minuit sur Moodle le script R de la première moitié du contrôle continu résultant des instructions à la fin des séances 2 et 3.
 
 
 ******
