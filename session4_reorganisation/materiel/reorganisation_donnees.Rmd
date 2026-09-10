@@ -348,7 +348,6 @@ colnames(expt1.cm)
 
 ## Ressources et liens utiles:
 
-- [antisèche pour la réorganisation de données](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 - [Chapitre sur la réorganisation de données du livre 'R for Data Science'](http://r4ds.had.co.nz/transform.html)
 
 
