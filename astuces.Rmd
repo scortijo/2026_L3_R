@@ -40,4 +40,4 @@ Il y aussi des blog de très bonne qualité comme [STHDA](http://www.sthda.com/e
 
 [Toutes les anti-sèches](https://www.rstudio.com/resources/cheatsheets/)
 
-[Consiels de visualisation de données](https://www.data-to-viz.com/)
+[Conseils de visualisation de données](https://www.data-to-viz.com/)

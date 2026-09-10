@@ -318,7 +318,7 @@ Nous pouvons aussi ordonner les génotypes en fonction de `days.to.bolt`. Pour c
 
 <br>
 
-La semaine prochaine nous allons faire un examen blanc, vous demandant d'explorer un jeu de donnée. Il s'agira d'une mise en pratique des fonctions que nous avons vu jusqu'ici. 
+Lors de la prochaine séance nous allons faire un examen blanc, vous demandant d'explorer un jeu de donnée. Il s'agira d'une mise en pratique des fonctions que nous avons vu jusqu'ici. 
 
 **Afin de vous y préparer, nous vous recommandons de reprendre l'ensemble des cours et de vous exercer à refaire les exercices (sans avoir recours aux solutions si possible).**
 
