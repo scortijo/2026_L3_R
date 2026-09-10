@@ -141,7 +141,7 @@ Les différentes séances sont (avec accès au cours):
 ## Pour utiliser R chez vous: 
 Il est recommandé d'utiliser R régulièrement pour bien comprendre et apprendre. Pour cela le mieux est d'installer **R** et **R studio** sur votre ordinateur:
 
-[Installer R](https://cran.biotools.fr/)
+[Installer R](https://larmarange.github.io/analyse-R/installation-de-R-et-RStudio.html#installation-de-r)
 
 [Installer Rstudio](https://rstudio.com/products/rstudio/download/)
 
