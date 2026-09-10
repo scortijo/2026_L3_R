@@ -1,10 +1,10 @@
-**Où:** Salles TD5.127 et TD5.130 
+**Où:** Salles ?
 
-**Quand:** Du 09 octobre 2025 au 11 décembre 2025
+**Quand:** Du 08 octobre 2026 au 10 décembre 2026
 
-**Instructeurs:** 
+**Instructrice:** 
 [Sandra Cortijo](mailto:sandra.cortijo@cnrs.fr), 
-[Charlotte Lecuyer](mailto:charlotte.lecuyer@cnrs.fr)
+
 
 
 ## Description
