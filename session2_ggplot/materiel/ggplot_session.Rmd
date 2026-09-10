@@ -218,7 +218,7 @@ Pour cela nous utilisons la fonction `aes()`.
     - lignes (`geom_line` pour des tendance, séries chronologiques)    
 
 
-Pour plus d'information sur la création de graphique avec `ggplot2`, voir [cette antisèche très utile](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf).
+Pour plus d'information sur la création de graphique avec `ggplot2`, voir [cette antisèche très utile](https://rstudio.github.io/cheatsheets/data-visualization.pdf).
 
 
 
