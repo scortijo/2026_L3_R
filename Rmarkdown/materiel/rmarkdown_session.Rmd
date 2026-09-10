@@ -12,7 +12,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-[Retour à la page d'accueil](https://scortijo.github.io/2022_L3_R/)
 
 # Introduction à ``Rmarkdown``
 
@@ -311,5 +310,3 @@ A partir de ce que nous avons vu aujourd'hui, choisissez le script `.R` d'une se
 - [Fiches de syntaxe Rmakdown](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf?_ga=2.116494478.901299713.1598125979-1765392125.1580035352)
 
 -------
-
-[Retour à la page d'accueil](https://scortijo.github.io/2022_L3_R/)
