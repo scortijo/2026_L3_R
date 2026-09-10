@@ -1,0 +1,57 @@
+---
+title: "Devoir séance 4"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+
+<br>
+
+Ceci est le début de la deuxième moitié du contrôle continu qui sera à déposer sur Moodle au plus tard le 05/12/2025 à minuit. Cette partie correspondant à la séance 4 du contrôle continu qui combinera les exercices à faire entre les séances. Pour cela:
+
+
+- Créez un nouveau script R que vous sauvez immediatement sous le nom de `Script_controle_continu2_numéro_étudiant.R` en remplaçant `numéro_étudiant` par votre propre numéro.
+
+<br>
+
+- Chargez le package `tidyverse`(en utilisant `library()`)
+
+<br>
+
+- Définissez votre répertoire de travail dans le dossier `session4_organisations`  (en utilisant `setwd()`)
+
+<br>
+
+- Importez le tableau `Cheng_2021_Arabidopsis_N.txt` en utilisant la bonne fonction et gardez le dans l'objet `nitrate_data`. 
+Notez que chacun des exercices suivants est indépendant des autres
+
+<br>
+
+
+- Exercice 1 :  Selectionnez toutes les colonnes de l'objet `nitrate_data` sauf la colonne `Nlevel`.
+
+<br>
+
+- Exercice 2 : Gardez uniquement les lignes de l'objet `nitrate_data` qui sont l'accession `Col-0`.
+
+
+- Exercice 3 : En utilisant `%>%` afin de ne pas créer d'objet intermédiaire, effectuez la suite d'opérations suivantes:
+1. Créez la colonne `AppliedN_g`, à partir de la colonne `AppliedN_mg` qui contient, en grammes (au lieu de milligrammes) la quantité d'azote utilisée dans le traitement.
+2. Créez la colonne `NUE` qui contient la valeur d'efficacité d'utilisation d'azote qui est mesurée avec la formule suivante:         
+*Poids sec des plantes (en gramme) / quantité d'azote utilisée dans le traitement (en gramme)*
+3. Selectionnez les lignes correspondant au premier répliqua
+4. Effectuez un boxplot de la `NUE` en fonction de l'accession, avec l'intérieur des boxplots colorés en fonction de la quantité d'azote utilisée dans le traitement (`Nlevel`).
+
+Formulez une interprétation à propos de l'effet du la concentration en azote sur l'efficacité d'utilisation d'azote des plantes d'Arabidopsis. 
+
+
+<br>
+
+- **C'est fini. N'oubliez pas de sauver votre fichier que vous réutiliserez pour le reste du contrôle continu.**
+
+

@@ -1,0 +1,52 @@
+---
+title: "Devoir séance 2"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+
+<br>
+
+Ceci est la partie correspondant à la séance 2 du contrôle continu qui combinera les exercices à faire entre les séances. Pour cela:
+
+
+<br>
+
+
+- Reprenez le script R `Script_controle_continu1_numéro_étudiant.R` (avec votre votre propre numéro à la place de `numéro_étudiant`) que vous avez créé dans le devoir de la séance précédente.
+
+
+<br>
+
+- En utilisant une ou plusieurs fonctions vues lors de la deuxième séance, déterminez le nombre de lignes et de colonnes de votre objet `nitrate_data` contenant les données du tableau `Cheng_2021_Arabidopsis_N.txt`. 
+
+
+<br>
+
+
+- Effectuez un boxplot du poids des plantes (`DryWeight_g`, axe y), en fonction de l'`Accession` (axe x), avec l'intérieur des boxplot colorés en fonction de du type de traitement d'azote (Nlevel`).  
+
+
+<br>
+
+- **C'est fini. N'oubliez pas de sauver votre fichier que vous réutiliserez pour le reste du contrôle continu.**
+
+<br>
+
+
+
+
+
+
+
+

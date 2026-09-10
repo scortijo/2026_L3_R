@@ -1,0 +1,71 @@
+---
+title: "Analyse de la floraison chez *Arabidopsis thaliana*"
+author: "Etudiant en bioinformatique"
+date: "8/17/2021"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    number_sections: TRUE
+    theme: united
+    highlight: kate
+bibliography: ../data/biblio.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(plotly)
+library(tidyverse)
+library(DT)
+```
+
+# Contexte
+
+Les données analysées dans ce rapport sont issues d'une [publication intitulée "Fluctuating, warm temperatures decrease the effect of a key floral repressor on flowering time in Arabidopsis thaliana"](https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.13799), de 2015. Il s'agit de données de phénotypes pour plusieurs génotypes d'*Arabidopsis thaliana* visant à comprendre les mécanismes et gènes gouvernant la floraison [@Burghardt2015].
+
+
+Cette figure montre des fleurs d'Arabidopsis sous plusieurs angles : 
+
+![](https://www.researchgate.net/profile/Hong-Ma-22/publication/7876365/figure/fig1/AS:278635790520332@1443443357444/Arabidopsis-flower-A-An-intact-mature-stage-13-Arabidopsis-flower-with-four-types_W640.jpg)
+
+[Source de l'image](https://www.researchgate.net/publication/7876365_Molecular_genetic_analyses_of_microsporogenesis_and_microgametogenesis_in_flowering_plants)
+
+# Analyse de la floraison
+
+## Import et affichage des données
+
+Import des données et chargement dans l'objet expt1. Avec `datatable`, il est possible de parcourir les données de manière interactive et même de les filtrer dynamiquement.
+
+```{r read data, message=FALSE}
+expt1 <- read_tsv("../data/burghardt_et_al_2015_expt1.txt")
+datatable(expt1, filter="top", options = list(pageLength = 10, scrollX=T))
+```
+
+
+## Visualisation des données
+
+Nous commençons par retirer les valeurs manquantes du jeu de données : 
+
+```{r drop missing}
+expt1 <- drop_na(expt1)
+```
+
+
+Puis, nous affichons le nombre de feuilles des rosettes en fonction du nombre de jours jusqu'à floraison.
+
+```{r visualisation, fig.width=9, fig.height=6, fig.cap="Représentation des données de floraison du papier de Burghardt et Al. (2015)"}
+plot <- ggplot(expt1, aes(x = days.to.flower, 
+                 y = rosette.leaf.num, 
+                 color = day.length)) + 
+  geom_point() +
+  ggtitle("Nombre de feuilles en fonction du nombre de jours jusqu'à floraison")
+
+ggplotly(plot)
+```
+
+
+
+On constate que le nombre de feuilles des rosettes est très corrélé au nombre de jours jusqu'à floraison. Cette corrélation positive reste conservée quelle que soit la photopériode.
+
+
+# Références
