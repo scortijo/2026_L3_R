@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 
 <br>
 
@@ -49,7 +49,7 @@ Formulez une interprétation à propos de l'effet du la concentration en azote s
 <br>
 
 
-- **C'est fini. N'oubliez pas de sauver votre fichier. Le script contenant tous les exercices à faire après les séances 2 et 3 est la première moitié du contrôle continu et doit être déposé sur Moodle au plus tard le 31/10/2025 à minuit.**
+- **C'est fini. N'oubliez pas de sauver votre fichier. Le script contenant tous les exercices à faire après les séances 2 et 3 est la première moitié du contrôle continu et doit être déposé sur Moodle au plus tard le 31/10/2026 à minuit.**
 
 
 <br>
