@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
 
 
 Dans cette partie du cours vous allez apprendre à réorganiser des tables dans R. 
@@ -368,4 +368,4 @@ colnames(expt1.cm)
 
 
 
-[Retour à la page d'accueil](https://scortijo.github.io/2025_L3_R/)
+[Retour à la page d'accueil](https://scortijo.github.io/2026_L3_R/)
