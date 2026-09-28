@@ -1,4 +1,4 @@
-**Où:** Salles ?
+**Où:** Salles TD info
 
 **Quand:** Du 08 octobre 2026 au 10 décembre 2026
 
@@ -18,7 +18,7 @@ Afin de pouvoir faire ce cours sur votre ordinateur, téléchargez le matériel 
 Les différentes séances sont (avec accès au cours):
 
 
-### Séance 1 (Jeudi 08/10/2026 13h15-16h30, salle ?): Organisation des données et Intro à **R** 
+### Séance 1 (Jeudi 08/10/2026 13h15-16h30, salle 5.130): Organisation des données et Intro à **R** 
 
 [Matériel organisation des données](session1_organisation_intro/materiel/organisation_session.html)  
 
@@ -33,7 +33,7 @@ Les différentes séances sont (avec accès au cours):
 <br>
 
 
-### Séance 2 (Vendredi 16/10/2026 13h15-16h30, salle ?): Réaliser des graphiques
+### Séance 2 (Vendredi 16/10/2026 13h15-16h30, salle 5.125): Réaliser des graphiques
 
 
 [Matériel réaliser des graphiques](session2_ggplot/materiel/ggplot_session.html)  
@@ -43,7 +43,7 @@ Les différentes séances sont (avec accès au cours):
 <br>
 
 
-### Séance 3 (Lundi 19/10/2026 13h15-14h45, salle ?): Ajout des résultats de tests statistiques
+### Séance 3 (Lundi 19/10/2026 13h15-14h45, salle 5.125): Ajout des résultats de tests statistiques
 
 
 [Matériel ajouter des résultats de tests statistiques à des graphiques](session3_stats/materiel/statistiques.html)  
@@ -54,7 +54,7 @@ Les différentes séances sont (avec accès au cours):
 
 <br>
 
-### Séance 4 (Jeudi 22/10/2026 13h15-16h30, salle ?): Réorganisation de données 
+### Séance 4 (Jeudi 22/10/2026 13h15-16h30, salle 5.125): Réorganisation de données 
 
 [Partie 2 - Matériel réorganisation de données](session4_reorganisation/materiel/reorganisation_donnees.html)  
 
