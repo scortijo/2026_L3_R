@@ -76,7 +76,7 @@ Les différentes séances sont (avec accès au cours):
 
 
 
-### Séance 6 (Vendredi 13/11/2026 13h15-16h30, salle ?): Réorganisation avancée de données (suite)  ET utilisation d'outils d'IA pour l'aide au codage
+### Séance 6 (Vendredi 13/11/2026 13h15-16h30, salle TD5.125): Réorganisation avancée de données (suite)  ET utilisation d'outils d'IA pour l'aide au codage
 
 
 
@@ -94,8 +94,10 @@ Les différentes séances sont (avec accès au cours):
 <br>
 
 
-### Séance 7 (Date? 13h15-16h30, salle ?): Exam blanc, Correction de l'exam blanc et trucs et astuces
+### Séance 7 (Mardi 24/11 9h45-13h, salle 5.125): Exam blanc, Correction de l'exam blanc et trucs et astuces
 
+
+### Séance rattrapage (Mercredi 25/11 13h15-16h30, salle 36.404): Séance rattrapage
 
 
 
